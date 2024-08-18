@@ -7,7 +7,7 @@
         </div>
 
         <form class="flex" method="POST" wire:submit.prevent='addTodo'>
-            <x-text-input wire:model='todo' placeholder="New Todo ... " class="w-full mr-2"/>
+            <x-text-input wire:model='todo' placeholder="Nueva tarea ... " class="w-full mr-2"/>
             
             <x-primary-button >
                 Añadir
@@ -58,7 +58,7 @@
             </div>
 
         @empty
-            <p>No todos found.</p>
+            <p>No hay tareas...</p>
         @endforelse
 
         <div class="mt-5">
