@@ -3,9 +3,9 @@
         <div class="flex flex-col md:flex-row items-center justify-between">
             <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight mb-4 md:mb-0">
                 @if(auth()->user()->role == 'Admin')
-                    {{ __('Admin Dashboard') }}
+                    {{ __('Admin TodoList') }}
                 @else
-                {{ __('Dashboard') }}
+                {{ __('TodoList') }}
                 @endif
             </h2>      
             {{-- Admin links --}}
