@@ -10,7 +10,7 @@
             <x-text-input wire:model='todo' placeholder="New Todo ... " class="w-full mr-2"/>
             
             <x-primary-button >
-                Add
+                Añadir
             </x-primary-button>
         </form>
         <br>
@@ -38,19 +38,19 @@
                 <div>
                     @if($edit == $todo->id)
                         <x-secondary-button wire:click='updateTodo({{ $todo->id }})'>
-                            Update
+                            Actualizar
                         </x-secondary-button>
                         <x-danger-button wire:click='cancelEdit()'>
-                            Cancel
+                            Cancelar
                         </x-danger-button>
                     @else
                         <x-secondary-button wire:click='editTodo({{ $todo->id }})'>
-                            Edit
+                            Editar
                         </x-secondary-button>
                         
                         @if(auth()->user()->role == "Admin")
                             <x-danger-button wire:click='deleteTodo({{ $todo->id }})'>
-                                Delete
+                                Eliminar
                             </x-danger-button>
                         @endif
                     @endif
